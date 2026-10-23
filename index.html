@@ -1,266 +1,386 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ilias Jafaoui · Websites for shops</title>
-  <meta name="description" content="Front-end developer in Ben Slimane, Morocco. Mobile-friendly websites for shops, clinics and small businesses.">
-  <meta property="og:title" content="Ilias Jafaoui · Websites for shops">
-  <meta property="og:description" content="Mobile-friendly websites for shops, clinics and small businesses in Morocco. Get a free website check.">
-  <meta property="og:image" content="https://iliasjf.github.io/img/og.jpg">
-  <meta name="theme-color" content="#3b82f6">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
-</head>
-<body>
-<a class="skip" href="#work">Skip to my work</a>
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Ilias Jafaoui, front-end developer in Ben Slimane, Morocco. Mobile-friendly websites for shops, clinics and small businesses.">
+      <meta name="theme-color" content="#1d5ee6">
+      <meta property="og:title" content="Ilias Jafaoui · Front-End Developer">
+      <meta property="og:description" content="Mobile-friendly websites for shops, clinics and small businesses in Morocco.">
+      <meta property="og:image" content="https://iliasjf.github.io/assets/img/og.jpg">
 
-<header class="hero" id="top">
-  <div class="receipt hero__card">
-    <nav class="receipt__nav" aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#check">Free check</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero__grid">
-      <div class="hero__who">
-        <h1 class="hero__title" data-print>Ilias Jafaoui</h1>
-        <p class="hero__lead" data-print>Front-end developer in Ben Slimane. I build mobile-friendly websites for shops, clinics and small businesses in Morocco.</p>
-      </div>
-      <div class="hero__bill" data-print>
-        <dl class="items">
-          <div><dt>Websites</dt><dd>HTML · CSS · JS</dd></div>
-          <div><dt>Freelance work</dt><dd>2022–2025</dd></div>
-          <div><dt>Store Délégué, BIM</dt><dd>2025–now</dd></div>
-          <div><dt>Social media ads</dt><dd>2022–2025</dd></div>
-        </dl>
-        <div class="total">
-          <span>Your website check</span>
-          <strong>0,00 DH</strong>
-        </div>
-      </div>
-    </div>
-    <div class="hero__actions" data-print>
-      <a class="btn" href="#check">Get my free check</a>
-      <a class="textlink" href="#work">See my work</a>
-      <p class="receipt__thanks">Merci de votre visite</p>
-    </div>
-  </div>
-</header>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
 
-<main>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
-  <section class="work" id="work" aria-labelledby="work-title">
-    <h2 class="work__title" id="work-title" data-rise>Recent work</h2>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css?v=4">
 
-    <article class="folder folder--paper" style="--i:0">
-      <div class="folder__strip">
-        <h3 class="folder__tab">SkyStore</h3>
-        <span class="folder__kind">Online store</span>
-      </div>
-      <div class="folder__body">
-        <figure class="folder__media" data-rise>
-          <img src="img/skystore.webp" alt="SkyStore home page: a sports clothing store with a blue hero and a Shop Now button" width="1440" height="900" loading="lazy">
-          <img class="folder__phone" src="img/skystore-phone.webp" alt="SkyStore on a phone screen" width="390" height="844" loading="lazy">
-        </figure>
-        <div class="folder__text" data-rise>
-          <p>A complete online store for sportswear: a home page, a product list, product pages with sizes, a cart that adds up the order, an account page and a contact page.</p>
-          <p>Built with plain HTML, CSS and JavaScript, and laid out to work on a phone first, because that is where a shop's customers open it.</p>
-          <a class="textlink" href="https://github.com/IliasJf/SkyStore">View the code on GitHub</a>
-        </div>
-      </div>
-    </article>
+      <title>Ilias Jafaoui · Front-End Developer</title>
+   </head>
+   <body>
+      <!--==================== NAV ====================-->
+      <nav class="nav" aria-label="Sections">
+         <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link" title="Home" aria-label="Home"><i class="ri-home-5-line"></i></a></li>
+            <li><a href="#projects" class="nav__link" title="Projects" aria-label="Projects"><i class="ri-folder-6-line"></i></a></li>
+            <li><a href="#services" class="nav__link" title="Services" aria-label="Services"><i class="ri-stack-line"></i></a></li>
+            <li><a href="#experience" class="nav__link" title="Experience" aria-label="Experience"><i class="ri-briefcase-4-line"></i></a></li>
+            <li><a href="#contact" class="nav__link" title="Contact" aria-label="Contact"><i class="ri-send-plane-line"></i></a></li>
+         </ul>
+      </nav>
 
-    <article class="folder folder--ink" style="--i:1">
-      <div class="folder__strip">
-        <h3 class="folder__tab">Dental clinic</h3>
-        <span class="folder__kind">Clinic website</span>
-      </div>
-      <div class="folder__body">
-        <figure class="folder__media" data-rise>
-          <img src="img/dental.webp" alt="Dental clinic website: a dentist at work beside the headline Let us brighten your smile" width="1440" height="900" loading="lazy">
-        </figure>
-        <div class="folder__text" data-rise>
-          <p>A website for a dental clinic: who they are, their services, patient reviews and a Make Appointment button that stays in reach.</p>
-          <p>The contact form saves each request to a MySQL database with PHP, so the clinic gets every appointment request in one place instead of lost in missed calls.</p>
-          <a class="textlink" href="https://github.com/IliasJf/Dentist-WebSite">View the code on GitHub</a>
-        </div>
-      </div>
-    </article>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <h1 class="sr-only">Ilias Jafaoui, front-end developer in Morocco</h1>
+            <div class="home__container container grid">
+               <!--===== PERFIL =====-->
+               <div class="home__perfil">
+                  <div class="perfil__content">
+                     <img src="assets/img/perfil.webp" alt="Ilias Jafaoui" class="perfil__img" width="700" height="700">
+                  </div>
 
-    <article class="folder folder--orange" style="--i:2">
-      <div class="folder__strip">
-        <h3 class="folder__tab">NonProductStock</h3>
-        <span class="folder__kind">Stock app</span>
-      </div>
-      <div class="folder__body">
-        <div class="folder__media" data-rise>
-          <div class="winform" data-ui role="img" aria-label="Sketch of the NonProductStock components screen: a table of components with supplier, unit price, emergency stock and order status">
-            <div class="winform__bar"><span>NonProductStock — Components</span><span class="winform__x">×</span></div>
-            <div class="winform__tools"><span>Home</span><span>New</span><span>Save</span><span>Delete</span><span class="winform__search">Search code…</span></div>
-            <table>
-              <thead><tr><th>Code</th><th>Supplier</th><th>Unit price</th><th>Type</th><th>Emg. stock</th><th>PO status</th></tr></thead>
-              <tbody>
-                <tr><td>CMP-0142</td><td>Atlas Pack</td><td>12.50</td><td>Packaging</td><td>40</td><td>Open</td></tr>
-                <tr><td>CMP-0157</td><td>Nord Labels</td><td>3.20</td><td>Labels</td><td>200</td><td>Closed</td></tr>
-                <tr class="is-low"><td>CMP-0163</td><td>Sahel Tools</td><td>88.00</td><td>Tools</td><td>5</td><td>Open</td></tr>
-                <tr><td>CMP-0171</td><td>Atlas Pack</td><td>7.75</td><td>Packaging</td><td>60</td><td>Open</td></tr>
-                <tr><td>CMP-0188</td><td>Medi Gloves</td><td>1.10</td><td>Safety</td><td>500</td><td>Closed</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="folder__text" data-rise>
-          <p>A Windows app for the stock nobody sells: packaging, labels, tools and safety supplies. It tracks each component's supplier, unit price and emergency stock level, and the purchase orders behind them.</p>
-          <p>Written in C# with WinForms and SQL Server, with a login, a components screen, stock operations and a stock view.</p>
-          <a class="textlink" href="https://github.com/IliasJf/NonProductStock">View the code on GitHub</a>
-        </div>
-      </div>
-    </article>
-  </section>
+                  <div class="perfil__data">
+                     <p class="perfil__name">Ilias <br> Jafaoui</p>
 
-  <section class="letter" id="about" aria-labelledby="about-title">
-    <figure class="letter__photo" data-rise>
-      <img src="img/souk-sacks.webp" alt="Burlap sacks of dried herbs and spices stacked in front of a wooden door in a souk" width="1400" height="915" loading="lazy">
-      <figcaption class="caption">Sacks in a Marrakech souk, early 1990s. Photo: Angeline A. van Achterberg</figcaption>
-    </figure>
-    <div class="letter__sheet receipt" data-rise>
-      <h2 id="about-title">Why I build for shops</h2>
-      <p>I spend my days on a shop floor. At BIM I run the store with the manager: the team, the shelves, the stock, and the problems that come up during the day.</p>
-      <p>That is where I learned what most web developers never see. Customers decide before they walk in. They search the name, check the hours, look for a number to call. If they can't find it, they go to the shop next door.</p>
-      <p>Before BIM I freelanced for three and a half years, building websites for people and small businesses and running their social media ads. During an internship at Lear Corporation I built a web app and its database queries.</p>
-      <p>Now I put both sides together: websites that load on a cheap phone on a slow connection, and answer a customer's questions before they come in.</p>
-      <p class="letter__sign">Ilias Jafaoui<span>Front-end developer · Store Délégué at BIM</span></p>
-      <div class="letter__stub">
-        <span>Own a shop, a clinic or a small business?</span>
-        <a class="btn" href="#check">Check my website</a>
-      </div>
-    </div>
-  </section>
+                     <div class="perfil__buttons">
+                        <a href="#projects" class="button">Projects</a>
+                        <a href="#services" class="button button__black">Services</a>
+                     </div>
+                  </div>
+               </div>
 
-  <section class="deck" id="services" aria-labelledby="services-title">
-    <div class="deck__stage">
-      <h2 id="services-title" data-rise>What I can set up</h2>
-      <ol class="deck__cards">
-        <li class="card" style="--tone:var(--tone-1)">
-          <h3>Showcase website</h3>
-          <p>Your products, prices, hours and location on one clean page, so people find you on Google before they visit.</p>
-          <div class="card__foot"><span>For any shop</span><a href="#check">Ask about it</a></div>
-        </li>
-        <li class="card" style="--tone:var(--tone-2)">
-          <h3>Online store</h3>
-          <p>Product pages and a cart, built for the phones your customers really use. Like SkyStore.</p>
-          <div class="card__foot"><span>For selling online</span><a href="#check">Ask about it</a></div>
-        </li>
-        <li class="card" style="--tone:var(--tone-3)">
-          <h3>Booking and contact forms</h3>
-          <p>Requests land in one place instead of lost in missed calls. Like the dental clinic site.</p>
-          <div class="card__foot"><span>For clinics and services</span><a href="#check">Ask about it</a></div>
-        </li>
-        <li class="card" style="--tone:var(--tone-1)">
-          <h3>Google Maps and hours</h3>
-          <p>Your business on the map with the right opening hours, phone number and photos.</p>
-          <div class="card__foot"><span>For walk-in customers</span><a href="#check">Ask about it</a></div>
-        </li>
-        <li class="card" style="--tone:var(--tone-2)">
-          <h3>Social media ads</h3>
-          <p>Visuals and ad campaigns that send people to your website or straight to your door.</p>
-          <div class="card__foot"><span>For busy weeks</span><a href="#check">Ask about it</a></div>
-        </li>
-        <li class="card" style="--tone:var(--tone-3)">
-          <h3>Stock and internal tools</h3>
-          <p>Small apps for stock, suppliers and orders, built from what I see on a shop floor every day.</p>
-          <div class="card__foot"><span>For the back room</span><a href="#check">Ask about it</a></div>
-        </li>
-      </ol>
-      <p class="deck__count">Six services. Every one starts with a free website check. <a href="#check">Start yours</a></p>
-    </div>
-  </section>
+               <!--===== INFO =====-->
+               <div class="home__info">
+                  <div class="info__data">
+                     <span class="info__dot"></span>
+                     <span class="info__name">Ilias Jafaoui</span>
+                  </div>
 
-  <section class="check" id="check" aria-labelledby="check-title">
-    <div class="check__intro" data-rise>
-      <h2 id="check-title">Ring up your website</h2>
-      <p>Answer six questions about your business. Your receipt prints as you go, with the first thing I would fix.</p>
-    </div>
-    <form class="check__form" id="checkForm" data-rise>
-      <label class="check__name">
-        <span>Your business name</span>
-        <input id="shopName" type="text" maxlength="28" placeholder="Hanout Al Baraka" autocomplete="organization">
-      </label>
-      <fieldset data-q="0"><legend>Does your business show up on Google Maps?</legend>
-        <label><input type="radio" name="q0" value="1"> Yes</label><label><input type="radio" name="q0" value="0"> No</label></fieldset>
-      <fieldset data-q="1"><legend>Do customers have a website or page to open?</legend>
-        <label><input type="radio" name="q1" value="1"> Yes</label><label><input type="radio" name="q1" value="0"> No</label></fieldset>
-      <fieldset data-q="2"><legend>Is it easy to read on a phone?</legend>
-        <label><input type="radio" name="q2" value="1"> Yes</label><label><input type="radio" name="q2" value="0"> No</label></fieldset>
-      <fieldset data-q="3"><legend>Are your opening hours online and correct?</legend>
-        <label><input type="radio" name="q3" value="1"> Yes</label><label><input type="radio" name="q3" value="0"> No</label></fieldset>
-      <fieldset data-q="4"><legend>Can people call or WhatsApp you with one tap?</legend>
-        <label><input type="radio" name="q4" value="1"> Yes</label><label><input type="radio" name="q4" value="0"> No</label></fieldset>
-      <fieldset data-q="5"><legend>Can people see your products or prices first?</legend>
-        <label><input type="radio" name="q5" value="1"> Yes</label><label><input type="radio" name="q5" value="0"> No</label></fieldset>
-    </form>
-    <div class="check__receiptwrap">
-      <div class="receipt check__receipt" aria-live="polite">
-        <p class="check__shop" id="rShop">Your business</p>
-        <p class="check__date" id="rDate">Website check</p>
-        <dl class="items" id="rItems">
-          <div><dt>Google Maps</dt><dd>—</dd></div>
-          <div><dt>Website</dt><dd>—</dd></div>
-          <div><dt>Works on a phone</dt><dd>—</dd></div>
-          <div><dt>Opening hours</dt><dd>—</dd></div>
-          <div><dt>One-tap call</dt><dd>—</dd></div>
-          <div><dt>Products and prices</dt><dd>—</dd></div>
-        </dl>
-        <div class="total"><span>Score</span><strong id="rScore">0 / 6</strong></div>
-        <p class="check__fix" id="rFix">Answer the questions to see the first thing to fix.</p>
-        <a class="btn btn--block" id="rSend" href="https://www.linkedin.com/in/ilias-jafaoui">Send my receipt to Ilias</a>
-        <p class="check__note" id="rNote">Opens LinkedIn. Your receipt is copied, ready to paste in a message.</p>
-      </div>
-    </div>
-  </section>
+                  <div class="info__photo">
+                     <img src="assets/img/perfil-small.webp" alt="" class="info__img" width="400" height="400">
+                  </div>
 
-  <section class="visit" id="contact" aria-labelledby="contact-title">
-    <img class="visit__photo" src="img/ben-slimane.webp" alt="A palm-lined roundabout in Ben Slimane under a clear blue sky" width="1800" height="1205" loading="lazy">
-    <div class="visit__card receipt" data-rise>
-      <h2 id="contact-title">Find me</h2>
-      <dl class="items items--plain">
-        <div><dt>Based in</dt><dd>Ben Slimane, Casablanca-Settat</dd></div>
-        <div><dt>Works with</dt><dd>Businesses across Morocco</dd></div>
-        <div><dt>Fastest reply</dt><dd>A LinkedIn message</dd></div>
-        <div><dt>Code</dt><dd><a href="https://github.com/IliasJf">github.com/IliasJf</a></dd></div>
-      </dl>
-      <a class="btn btn--block" href="https://www.linkedin.com/in/ilias-jafaoui">Message me on LinkedIn</a>
-    </div>
-    <p class="caption visit__caption">Ben Slimane. Photo: Nomadz</p>
-  </section>
+                  <p class="info__description">
+                     Front-end developer building mobile-friendly websites
+                     for shops, clinics and small businesses.
+                  </p>
 
-</main>
+                  <a href="https://github.com/IliasJf" class="button button__black button__border" target="_blank" rel="noopener">
+                     <i class="ri-github-fill"></i> My GitHub
+                  </a>
+               </div>
 
-<footer class="back">
-  <div class="back__panel">
-    <div class="back__note" data-rise>
-      <h2>Merci de votre visite</h2>
-      <p>Thanks for reading to the end of the receipt. If something on this page made you think of your own shop, send me its name and I'll take a look.</p>
-    </div>
-    <div class="back__address" data-rise>
-      <figure class="back__stamp"><img src="img/casablanca-market-gate.webp" alt="The tiled gate of the Central Market in Casablanca" width="900" height="506" loading="lazy"></figure>
-      <a href="https://www.linkedin.com/in/ilias-jafaoui">LinkedIn: in/ilias-jafaoui</a>
-      <a href="https://github.com/IliasJf">GitHub: IliasJf</a>
-      <a href="#check">Free website check</a>
-      <a href="#top">Back to the top</a>
-    </div>
-  </div>
-  <p class="back__name" aria-hidden="true">Ilias Jafaoui</p>
-  <p class="credits">Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=109636608">“Two stacked rows of large burlap sacks… Marrakech”</a> by Angeline A. van Achterberg, ASC Leiden, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Ville_Benslimane_Maroc.JPG">“Ville Benslimane Maroc”</a> by Nomadz, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:%D8%A8%D8%A7%D8%A8_%D8%A7%D9%84%D8%B3%D9%88%D9%82_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A.webp">“باب السوق المركزي”</a> by إيان, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; all via Wikimedia Commons. Project screenshots are my own work.</p>
-  <p class="imprint">© <span id="year">2026</span> Ilias Jafaoui · Built by hand with HTML, CSS and JavaScript</p>
-</footer>
+               <!--===== ABOUT =====-->
+               <div class="home__about">
+                  <p class="about__name">
+                     Ilias Jafaoui · <b>Front-End Developer</b>
+                  </p>
 
-<script src="js/gsap.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script src="script.js?v=3"></script>
-</body>
+                  <p class="about__description">
+                     Based in Ben Slimane, Morocco. 3+ years building websites
+                     for small businesses, and a Store Délégué at BIM, so I know
+                     retail from the inside.
+                  </p>
+
+                  <div class="about__links">
+                     <a href="https://www.linkedin.com/in/ilias-jafaoui" target="_blank" rel="noopener" class="about__link" aria-label="LinkedIn">
+                        <i class="ri-linkedin-box-line"></i>
+                     </a>
+                     <a href="https://github.com/IliasJf" target="_blank" rel="noopener" class="about__link" aria-label="GitHub">
+                        <i class="ri-github-line"></i>
+                     </a>
+                     <a href="https://iliasjf.github.io/SkyStore/" target="_blank" rel="noopener" class="about__link" aria-label="SkyStore live demo">
+                        <i class="ri-store-2-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="about__photo">
+                     <img src="assets/img/perfil-small.webp" alt="" class="about__img" width="400" height="400">
+                  </div>
+
+                  <p class="about__note">
+                     Own a shop or a clinic? Send me its name and I'll check
+                     its website for free.
+                  </p>
+
+                  <a href="#contact" class="button">Contact Me</a>
+               </div>
+
+               <!--===== SKILLS =====-->
+               <div class="home__skills">
+                  <h2 class="skills__title">Skills</h2>
+
+                  <ul class="skills__images">
+                     <li><img src="assets/img/skills-html.svg" alt="HTML" title="HTML" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-css.svg" alt="CSS" title="CSS" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-javascript.svg" alt="JavaScript" title="JavaScript" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-typescript.svg" alt="TypeScript" title="TypeScript" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-php.svg" alt="PHP" title="PHP" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-mysql.svg" alt="MySQL" title="MySQL" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-csharp.svg" alt="C#" title="C#" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-git.svg" alt="Git" title="Git" width="32" height="32"></li>
+                     <li><img src="assets/img/skills-github.svg" alt="GitHub" title="GitHub" width="32" height="32"></li>
+                  </ul>
+
+                  <p class="skills__description">
+                     Visit the projects section to see the work
+                     done with these web technologies.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Recent Projects</h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/project-skystore.webp" alt="SkyStore home page: a sportswear store with a Shop Now button" class="projects__img" width="1440" height="900" loading="lazy">
+                  </div>
+
+                  <h3 class="projects__name">SkyStore</h3>
+                  <p class="projects__description">
+                     A responsive online store with product pages, a cart,
+                     account and contact pages, built phone-first.
+                  </p>
+
+                  <ul class="projects__tech">
+                     <li><img src="assets/img/skills-html.svg" alt="HTML" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-css.svg" alt="CSS" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-javascript.svg" alt="JavaScript" width="16" height="16"></li>
+                  </ul>
+
+                  <div class="projects__buttons">
+                     <a href="https://iliasjf.github.io/SkyStore/" target="_blank" rel="noopener" class="projects__button">
+                        <i class="ri-link"></i> <span>Live demo</span>
+                     </a>
+                     <a href="https://github.com/IliasJf/SkyStore" target="_blank" rel="noopener" class="projects__button">
+                        <i class="ri-github-line"></i> <span>Code</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/project-dental.webp" alt="Dental clinic website: a dentist at work beside the headline Let us brighten your smile" class="projects__img" width="1440" height="900" loading="lazy">
+                  </div>
+
+                  <h3 class="projects__name">Dental Clinic Website</h3>
+                  <p class="projects__description">
+                     A clinic website with an appointment form that saves every
+                     request to a MySQL database with PHP.
+                  </p>
+
+                  <ul class="projects__tech">
+                     <li><img src="assets/img/skills-php.svg" alt="PHP" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-mysql.svg" alt="MySQL" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-css.svg" alt="CSS" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-javascript.svg" alt="JavaScript" width="16" height="16"></li>
+                  </ul>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/IliasJf/Dentist-WebSite" target="_blank" rel="noopener" class="projects__button">
+                        <i class="ri-github-line"></i> <span>Code</span>
+                     </a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/project-nonproductstock.webp" alt="NonProductStock components screen: a table of components with supplier, unit price and emergency stock" class="projects__img" width="1080" height="680" loading="lazy">
+                  </div>
+
+                  <h3 class="projects__name">NonProductStock</h3>
+                  <p class="projects__description">
+                     A Windows app that tracks components, suppliers, purchase
+                     orders and emergency stock levels.
+                  </p>
+
+                  <ul class="projects__tech">
+                     <li><img src="assets/img/skills-csharp.svg" alt="C#" width="16" height="16"></li>
+                     <li><img src="assets/img/skills-mysql.svg" alt="SQL database" width="16" height="16"></li>
+                  </ul>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/IliasJf/NonProductStock" target="_blank" rel="noopener" class="projects__button">
+                        <i class="ri-github-line"></i> <span>Code</span>
+                     </a>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h2 class="section__title">Services I Offer</h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <div class="services__icon"><i class="ri-code-s-slash-line"></i></div>
+                  <h3 class="services__name">Web Development</h3>
+                  <p class="services__description">
+                     A clean website with your products, hours and location,
+                     fast on any phone.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__icon"><i class="ri-shopping-bag-3-line"></i></div>
+                  <h3 class="services__name">Online Stores</h3>
+                  <p class="services__description">
+                     Product pages and a cart, so customers can browse and
+                     order before they visit.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__icon"><i class="ri-map-pin-2-line"></i></div>
+                  <h3 class="services__name">SEO &amp; Google Maps</h3>
+                  <p class="services__description">
+                     Your business on the map with the right hours, phone
+                     number and photos.
+                  </p>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__icon"><i class="ri-megaphone-line"></i></div>
+                  <h3 class="services__name">Social Media Ads</h3>
+                  <p class="services__description">
+                     Visuals and ad campaigns that send people to your
+                     website or your door.
+                  </p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== EXPERIENCE ====================-->
+         <section class="experience section" id="experience">
+            <h2 class="section__title">Experience</h2>
+
+            <div class="experience__container container grid">
+               <article class="experience__card">
+                  <h3 class="experience__company">BIM Maroc</h3>
+                  <div class="experience__data">
+                     <h4 class="experience__profession">Store Délégué</h4>
+                     <span class="experience__date">01/26 – Present</span>
+                     <p class="experience__description">
+                        Promoted from Store Associate after 5 months. I run daily
+                        operations, stock and the team with the store manager.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="experience__card">
+                  <h3 class="experience__company">Freelance</h3>
+                  <div class="experience__data">
+                     <h4 class="experience__profession">Web Developer &amp; Digital Ads</h4>
+                     <span class="experience__date">01/22 – 07/25</span>
+                     <p class="experience__description">
+                        Built and updated websites for individuals and small
+                        businesses, and ran their social media ad campaigns.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="experience__card">
+                  <h3 class="experience__company">Lear Corporation</h3>
+                  <div class="experience__data">
+                     <h4 class="experience__profession">Web App Developer Intern</h4>
+                     <span class="experience__date">05/22 – 06/22</span>
+                     <p class="experience__description">
+                        Built a web app for managing urban cleanliness and
+                        improved its database queries and API integrations.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="experience__card">
+                  <h3 class="experience__company">Province de Benslimane</h3>
+                  <div class="experience__data">
+                     <h4 class="experience__profession">IT Technician</h4>
+                     <span class="experience__date">07/21 – 09/21</span>
+                     <p class="experience__description">
+                        Entered and integrated data, and solved day-to-day
+                        technical problems.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+
+            <form class="contact__form container grid" id="contact-form">
+               <div class="contact__group grid">
+                  <label class="contact__label">
+                     <span class="sr-only">Your name</span>
+                     <input type="text" name="user_name" required placeholder="Name" class="contact__input" autocomplete="name">
+                  </label>
+                  <label class="contact__label">
+                     <span class="sr-only">Your email</span>
+                     <input type="email" name="user_email" required placeholder="Email" class="contact__input" autocomplete="email">
+                  </label>
+               </div>
+
+               <label class="contact__label">
+                  <span class="sr-only">Your message</span>
+                  <textarea name="user_message" required placeholder="Message: your business name and what you need" class="contact__input contact__area"></textarea>
+               </label>
+
+               <p class="contact__message" id="contact-message" role="status" aria-live="polite"></p>
+
+               <button type="submit" class="contact__button button">
+                  Send Message <i class="ri-send-plane-line"></i>
+               </button>
+            </form>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <a href="#home" class="footer__logo">Ilias</a>
+
+            <ul class="footer__links">
+               <li><a href="#home" class="footer__link">Home</a></li>
+               <li><a href="#projects" class="footer__link">Projects</a></li>
+               <li><a href="#services" class="footer__link">Services</a></li>
+            </ul>
+
+            <div class="footer__social">
+               <a href="https://www.linkedin.com/in/ilias-jafaoui" target="_blank" rel="noopener" class="footer__social-link" aria-label="LinkedIn">
+                  <i class="ri-linkedin-box-line"></i>
+               </a>
+               <a href="https://github.com/IliasJf" target="_blank" rel="noopener" class="footer__social-link" aria-label="GitHub">
+                  <i class="ri-github-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <span class="footer__copy">
+            &#169; <span id="year">2026</span> Ilias Jafaoui · Design based on
+            <a href="https://github.com/bedimcode/responsive-portfolio-website-xian" target="_blank" rel="noopener">Xian by Bedimcode</a>
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#home" class="scrollup" id="scroll-up" aria-label="Back to top">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js?v=4"></script>
+   </body>
 </html>
