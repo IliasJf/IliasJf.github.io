@@ -87,11 +87,11 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const card = document.querySelector(".hero__card");
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.from(card, { clipPath: "inset(0 0 100% 0)", duration: 1.1, ease: "steps(14)" })
-      .from(card.querySelectorAll("[data-print]"), { y: 18, opacity: 0, duration: 0.6, stagger: 0.08 }, "-=0.7")
-      .from(".hero__photo", { scale: 1.12, duration: 2.4, ease: "power2.out" }, 0);
+      .from(card.querySelectorAll("[data-print]"), { y: 18, opacity: 0, duration: 0.6, stagger: 0.08 }, "-=0.7");
 
-    gsap.to(".hero__photo", {
-      yPercent: 12, ease: "none",
+    // The receipt drifts up and away as the page scrolls on.
+    gsap.to(card, {
+      yPercent: -8, rotate: -1.5, ease: "none",
       scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true },
     });
 
