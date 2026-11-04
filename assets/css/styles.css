@@ -857,7 +857,7 @@ img {
     max-width: 920px;
   }
 
-  /* The newest project spans the full row: picture on one side, text on the other */
+  /* The newest projects span the full row: picture on one side, text on the other */
   .projects__card--featured {
     grid-column: 1 / -1;
     display: grid;

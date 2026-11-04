@@ -10,10 +10,14 @@ I'm Ilias Jafaoui, a front-end developer in Morocco. I build fast, mobile-friend
 
 | Project | What it is |
 |---|---|
+| [Mawid](https://github.com/IliasJf/mawid) | Online booking for barbershops and salons in Morocco |
+| [ClientDesk](https://github.com/IliasJf/clientdesk) | Clients, projects and invoices for freelancers |
 | [TableTap](https://github.com/IliasJf/tabletap) | Café QR menu with WhatsApp ordering |
 | [Halden Estates](https://github.com/IliasJf/halden-estates) | Real estate website with search and filters |
 | [Shop Dashboard](https://github.com/IliasJf/shop-dashboard) | Sales and stock dashboard for a small shop |
 | [SkyStore](https://github.com/IliasJf/SkyStore) | Sportswear store with cart and checkout |
+| [Dental Clinic](https://github.com/IliasJf/Dentist-WebSite) | Clinic website with an appointment form saved to MySQL |
+| [NonProductStock](https://github.com/IliasJf/NonProductStock) | Windows app for spare parts, suppliers and stock levels |
 
 ## License
 
