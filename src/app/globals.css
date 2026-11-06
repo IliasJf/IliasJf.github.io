@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/*
+ * The portfolio wears the same clothes as SkyStore: a white floor, black type,
+ * heavy uppercase headlines, black pill buttons and rounded photo tiles. The
+ * work is the colour; one blue accent marks what's live.
+ */
+:root {
+  --bg: #ffffff;
+  --surface: #f4f4f5;
+  --ink: #111111;
+  --muted: #5f5f66;
+  --line: #e4e4e7;
+  --accent: #2563d9;
+
+  --step-small: 0.875rem;
+  --step-body: 1.0625rem;
+  --step-lead: clamp(1.125rem, 1rem + 0.6vw, 1.5rem);
+  --step-head: clamp(2.25rem, 1.2rem + 3.6vw, 4.5rem);
+  --step-display: clamp(3.5rem, 1rem + 9vw, 10rem);
+
+  --margin: clamp(1.25rem, 4vw, 4rem);
+  --header-h: 4rem;
+  --gap-section: clamp(5rem, 10vw, 9rem);
+  --radius: 0.75rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
+  --text-small: var(--step-small);
+  --text-body: var(--step-body);
+  --text-lead: var(--step-lead);
+  --text-head: var(--step-head);
+  --text-display: var(--step-display);
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--step-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: var(--ink);
+  color: #fff;
+}
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrap {
+  padding-inline: var(--margin);
+}
+.display {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+.head {
+  font-size: var(--step-head);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.skip {
+  position: absolute;
+  left: var(--margin);
+  top: -4rem;
+  z-index: 100;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+}
+.skip:focus {
+  top: 0.75rem;
+}
+
+/* ---------- buttons: black pills ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  background: var(--ink);
+  color: #fff;
+  border: 1.5px solid var(--ink);
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 160ms var(--ease-out),
+    border-color 160ms var(--ease-out),
+    color 160ms var(--ease-out);
+}
+.btn:hover {
+  background: #3a3a3a;
+  border-color: #3a3a3a;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn--plain {
+  background: transparent;
+  color: var(--ink);
+  border-color: #cacace;
+}
+.btn--plain:hover {
+  background: transparent;
+  border-color: var(--ink);
+}
+.btn--light {
+  background: #fff;
+  color: var(--ink);
+  border-color: #fff;
+}
+.btn--light:hover {
+  background: #e4e4e7;
+  border-color: #e4e4e7;
+}
+.link {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+.link:hover {
+  color: var(--muted);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--surface);
+  padding: 0.25rem 0.75rem;
+  font-size: var(--step-small);
+  font-weight: 600;
+}
+
+/* ---------- entrances: the parts of each block rise in turn ---------- */
+[data-reveal] > * {
+  transition:
+    opacity 700ms var(--ease-out),
+    transform 700ms var(--ease-out);
+}
+.js [data-reveal]:not(.is-in) > * {
+  opacity: 0;
+  transform: translateY(24px);
+}
+[data-reveal].is-in > *:nth-child(2) { transition-delay: 80ms; }
+[data-reveal].is-in > *:nth-child(3) { transition-delay: 160ms; }
+[data-reveal].is-in > *:nth-child(4) { transition-delay: 240ms; }
+[data-reveal].is-in > *:nth-child(n + 5) { transition-delay: 300ms; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .js [data-reveal]:not(.is-in) > * {
+    opacity: 1;
+    transform: none;
+  }
+}
