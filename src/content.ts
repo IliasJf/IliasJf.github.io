@@ -82,9 +82,9 @@ export const MORE: Project[] = [
   {
     slug: "halden",
     name: "Halden Estates",
-    pitch: "A property agency site with search, filters kept in the URL and gallery pages.",
-    highlights: ["Six pages, fully responsive", "Validated enquiry form"],
-    stack: ["React", "Tailwind"],
+    pitch: "A property agency site: search homes on a map with price pins, save the ones you like and compare them side by side.",
+    highlights: ["Map pins that group and follow the list", "Compare up to three saved homes"],
+    stack: ["React", "TypeScript", "Leaflet"],
     image: "project-halden-estates",
     alt: "Halden Estates home page: a modern villa with a pool and a property search bar",
     live: "https://iliasjf.github.io/halden-estates/",

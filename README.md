@@ -14,7 +14,7 @@ I'm Ilias Jafaoui, a front-end developer in Morocco, open to remote work. I buil
 | [Mawid](https://github.com/IliasJf/mawid) | Online booking for barbershops, live on Cloudflare |
 | [ClientDesk](https://github.com/IliasJf/clientdesk) | Clients, projects and invoices for freelancers |
 | [TableTap](https://github.com/IliasJf/tabletap) | Café QR menu with WhatsApp ordering |
-| [Halden Estates](https://github.com/IliasJf/halden-estates) | Real estate website with search and filters |
+| [Halden Estates](https://github.com/IliasJf/halden-estates) | Real estate website with a map view and saved-home compare |
 | [Shop Dashboard](https://github.com/IliasJf/shop-dashboard) | Sales and stock dashboard for a small shop |
 | [Dental Clinic](https://github.com/IliasJf/Dentist-WebSite) | Clinic website with an appointment form saved to MySQL |
 | [NonProductStock](https://github.com/IliasJf/NonProductStock) | Windows app for spare parts, suppliers and stock levels |
